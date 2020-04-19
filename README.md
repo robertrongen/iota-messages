@@ -19,7 +19,7 @@ address.js:
     Replace seed 
     Run to generate 10 addresses
 
-Send test IOTA tokens to address via https://faucet.comnet.einfachiota.de/#/
+Get test IOTA tokens to address from faucet: https://faucet.comnet.einfachiota.de/#/
 
 ## Send transaction
 
