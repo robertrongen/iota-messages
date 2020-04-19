@@ -7,7 +7,6 @@ Create a new file called exercise-chat.js and program a simple chat client b
 Note: You can use the following function to read data asynchronously into Node.js via a command prompt:
 
 `const prompt = (question) => {
-
    return new Promise((resolve, reject) => {
        const { stdin, stdout } = process
        stdin.resume()
@@ -15,11 +14,11 @@ Note: You can use the following function to read data asynchronously into Node.
        stdin.on('data', data => resolve(data.toString().trim()))
        stdin.on('error', err => reject(err))
    })
-}
- 
+}`
+
 This is how you use the function:
  
-prompt("Ihre Eingabe? ")
+`prompt("Ihre Eingabe? ")
 
    .then(input => {
        console.log(input)
