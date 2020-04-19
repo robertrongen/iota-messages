@@ -8,26 +8,19 @@ Note: You can use the following function to read data asynchronously into Node.
 
 `const prompt = (question) => {
    return new Promise((resolve, reject) => {
-       const { stdin, stdout } = process
-       stdin.resume()
-       stdout.write(question)
-       stdin.on('data', data => resolve(data.toString().trim()))
-       stdin.on('error', err => reject(err))
+       const { stdin, stdout } = process;
+       stdin.resume();
+       stdout.write(question);
+       stdin.on('data', data => resolve(data.toString().trim()));
+       stdin.on('error', err => reject(err));
    })
 }`
 
 This is how you use the function:
  
 `prompt("Ihre Eingabe? ")
-
-   .then(input => {
-       console.log(input)
-   })
-   
-   .catch(err => {
-       console.log(err)
-       process.exit()
-   })`
+   .then(input => { console.log(input) })
+   .catch(err => { console.log(err); process.exit() })`
 
 ## Additional Task
 Extend the application from Task 3 so that each chat participant only sees the messages of the other participants and not his own.
