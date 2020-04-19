@@ -1,6 +1,5 @@
 # IOTA Message application
-Test application used in IOTA Academy course.
-Quickstart also available on https://docs.iota.org/docs/client-libraries/0.1/getting-started
+Test application used in IOTA Javascript Quickstart (https://docs.iota.org/docs/client-libraries/0.1/getting-started).
 
 ## Preparation
 Requires node.js, verify in terminal with `node -v`
