@@ -5,7 +5,9 @@ Create a new file called exercise-chat.js and program a simple chat client b
 - After entering the message and ENTER the message is sent to a certain address in the tangle and another message can be entered.
 - New messages sent to the address should be output automatically.
 Note: You can use the following function to read data asynchronously into Node.js via a command prompt:
+
 `const prompt = (question) => {
+
    return new Promise((resolve, reject) => {
        const { stdin, stdout } = process
        stdin.resume()
@@ -18,9 +20,11 @@ Note: You can use the following function to read data asynchronously into Node.
 This is how you use the function:
  
 prompt("Ihre Eingabe? ")
+
    .then(input => {
        console.log(input)
    })
+   
    .catch(err => {
        console.log(err)
        process.exit()
